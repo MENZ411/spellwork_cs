@@ -78,6 +78,10 @@ namespace SpellWork.Spell
                 _rtb.AppendFormatLine("AttributesEx9: 0x{0:X8} ({1})", _spell.AttributesEx9, (SpellAtributeEx9)_spell.AttributesEx9);
             if (_spell.AttributesEx10 != 0)
                 _rtb.AppendFormatLine("AttributesEx10: 0x{0:X8} ({1})", _spell.AttributesEx10, (SpellAtributeEx10)_spell.AttributesEx10);
+            if (_spell.AttributesEx11 != 0)
+                _rtb.AppendFormatLine("AttributesEx11: 0x{0:X8} ({1})", _spell.AttributesEx11, (SpellAtributeEx11)_spell.AttributesEx11);
+            if (_spell.AttributesEx12 != 0)
+                _rtb.AppendFormatLine("AttributesEx12: 0x{0:X8} ({1})", _spell.AttributesEx12, (SpellAtributeEx12)_spell.AttributesEx12);
 
             _rtb.AppendLine(_line);
 
