@@ -9,5 +9,7 @@
         public uint SpellIcon;
         public string AlternateVerb;
         public uint CanLink;
+        public uint UnkMop1; // Mop
+        public uint UnkMopFlags2; // Mop
     }
 }

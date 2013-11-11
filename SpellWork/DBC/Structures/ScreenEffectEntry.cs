@@ -13,5 +13,8 @@
         public uint Unk6;
         public uint Unk7;
         public int Unk8;
+        public int Unk9;
+        public int Unk10;
+        public int Unk11;
     }
 }

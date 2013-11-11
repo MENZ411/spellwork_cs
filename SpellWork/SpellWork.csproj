@@ -109,10 +109,12 @@
     <Compile Include="DBC\Structures\SpellDifficultyEntry.cs" />
     <Compile Include="DBC\Structures\SpellDurationEntry.cs" />
     <Compile Include="DBC\Structures\SpellEffectEntry.cs" />
+    <Compile Include="DBC\Structures\SpellEffectScalingEntry.cs" />
     <Compile Include="DBC\Structures\SpellEntry.cs" />
     <Compile Include="DBC\Structures\SpellEquippedItemsEntry.cs" />
     <Compile Include="DBC\Structures\SpellInterruptsEntry.cs" />
     <Compile Include="DBC\Structures\SpellLevelsEntry.cs" />
+    <Compile Include="DBC\Structures\SpellMiscEntry.cs" />
     <Compile Include="DBC\Structures\SpellMissileEntry.cs" />
     <Compile Include="DBC\Structures\SpellMissileMotionEntry.cs" />
     <Compile Include="DBC\Structures\SpellPowerEntry.cs" />

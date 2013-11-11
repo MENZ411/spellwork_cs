@@ -226,7 +226,7 @@ namespace SpellWork.Spell
         private void AppendSpellVisualInfo()
         {
             SpellVisualEntry visualData;
-            if (!DBC.DBC.SpellVisual.TryGetValue(_spell.SpellVisual[0], out visualData))
+            //if (!DBC.DBC.SpellVisual.TryGetValue(_spell.SpellVisual[0], out visualData))
                 return;
 
             SpellMissileEntry missileEntry;
@@ -292,7 +292,7 @@ namespace SpellWork.Spell
             _rtb.AppendFormat("    ReqSkillValue {0}", skill.ReqSkillValue);
 
             _rtb.AppendFormat(", Forward Spell = {0}, MinMaxValue ({1}, {2})", skill.ForwardSpellid, skill.MinValue, skill.MaxValue);
-            _rtb.AppendFormat(", CharacterPoints ({0}, {1})", skill.CharacterPoints[0], skill.CharacterPoints[1]);
+            _rtb.AppendFormat(", CharacterPoints = {0}", skill.CharacterPoints);
         }
 
         private void AppendSpellEffectInfo()
@@ -558,6 +558,7 @@ namespace SpellWork.Spell
             if (difficultyId == 0)
                 return;
 
+            /*
             if (!DBC.DBC.SpellDifficulty.ContainsKey(difficultyId))
             {
                 _rtb.AppendFormatLine("Cannot find difficulty overrides for id {0} in SpellDifficulty.dbc!", difficultyId);
@@ -575,6 +576,7 @@ namespace SpellWork.Spell
 
                 _rtb.AppendFormatLine("{0}: {1}", modeNames[i], difficulty.SpellId[i]);
             }
+            */
         }
 
         private void AppendAreaInfo()

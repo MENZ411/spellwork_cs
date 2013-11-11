@@ -23,6 +23,8 @@ namespace SpellWork.Spell
         public uint AttributesEx8;
         public uint AttributesEx9;
         public uint AttributesEx10;
+        public uint AttributesEx11;
+        public uint AttributesEx12;
         public ulong Stances;                                     // 12-13    m_shapeshiftMask
         public ulong StancesNot;                                  // 14-15    m_shapeshiftExclude
         public uint Targets;                                      // 16       m_targets
@@ -196,34 +198,44 @@ namespace SpellWork.Spell
         public SpellInfoHelper(SpellEntry dbcData)
         {
             ID = dbcData.Id;
-            Attributes = dbcData.Attributes;
-            AttributesEx = dbcData.AttributesEx;
-            AttributesEx2 = dbcData.AttributesEx2;
-            AttributesEx3 = dbcData.AttributesEx3;
-            AttributesEx4 = dbcData.AttributesEx4;
-            AttributesEx5 = dbcData.AttributesEx5;
-            AttributesEx6 = dbcData.AttributesEx6;
-            AttributesEx7 = dbcData.AttributesEx7;
-            AttributesEx8 = dbcData.AttributesEx8;
-            AttributesEx9 = dbcData.AttributesEx9;
-            AttributesEx10 = dbcData.AttributesEx10;
-            CastingTimeIndex = dbcData.CastingTimeIndex;
-            DurationIndex = dbcData.DurationIndex;
-            PowerType = dbcData.PowerType;
-            RangeIndex = dbcData.RangeIndex;
-            Speed = dbcData.Speed;
-            SpellVisual = (uint[])dbcData.SpellVisual.Clone();
-            SpellIconID = dbcData.SpellIconID;
-            ActiveIconID = dbcData.ActiveIconID;
             SpellName = dbcData.SpellName;
             Rank = dbcData.Rank;
             _Description = dbcData.Description;
             ToolTip = dbcData.ToolTip;
-            SchoolMask = dbcData.SchoolMask;
             RuneCostID = dbcData.RuneCostID;
             SpellMissileID = dbcData.SpellMissileID;
             SpellDescriptionVariableID = dbcData.SpellDescriptionVariableID;
             SpellDifficultyId = dbcData.SpellDifficultyId;
+
+            // SpellMisc.dbc
+            var misc = dbcData.Misc;
+            if (misc != null)
+            {
+                Attributes = misc.Attributes;
+                AttributesEx = misc.AttributesEx;
+                AttributesEx2 = misc.AttributesEx2;
+                AttributesEx3 = misc.AttributesEx3;
+                AttributesEx4 = misc.AttributesEx4;
+                AttributesEx5 = misc.AttributesEx5;
+                AttributesEx6 = misc.AttributesEx6;
+                AttributesEx7 = misc.AttributesEx7;
+                AttributesEx8 = misc.AttributesEx8;
+                AttributesEx9 = misc.AttributesEx9;
+                AttributesEx10 = misc.AttributesEx10;
+                AttributesEx11 = misc.AttributesEx11;
+                AttributesEx12 = misc.AttributesEx12;
+                CastingTimeIndex = misc.CastingTimeIndex;
+                DurationIndex = misc.DurationIndex;
+                //PowerType = misc.PowerType;
+                RangeIndex = misc.RangeIndex;
+                Speed = misc.Speed;
+                SpellVisual = (uint[])misc.SpellVisual.Clone();
+                SpellIconID = misc.SpellIconID;
+                ActiveIconID = misc.ActiveIconID;
+                SchoolMask = misc.SchoolMask;
+            }
+            else
+                SpellVisual = new uint[2];
 
             // SpellCategories.dbc
             var cat = dbcData.Category;
@@ -318,7 +330,7 @@ namespace SpellWork.Spell
                 BaseLevel = levels.BaseLevel;
                 SpellLevel = levels.SpellLevel;
             }
-
+            /*
             // SpellPower.dbc
             var power = dbcData.Power;
             if (power != null)
@@ -329,7 +341,7 @@ namespace SpellWork.Spell
                 ManaCostPercentage = power.ManaCostPercentage;
                 PowerDisplayId = power.PowerDisplayId;
             }
-
+            */
             // SpellClassOptions.dbc
             var classOptions = dbcData.ClassOptions;
             if (classOptions != null)
@@ -354,7 +366,7 @@ namespace SpellWork.Spell
                 Totem = new uint[2];
                 TotemCategory = new uint[2];
             }
-
+            /*
             // SpellReagents.dbc
             var reagents = dbcData.Reagents;
             if (reagents != null)
@@ -362,7 +374,7 @@ namespace SpellWork.Spell
                 Reagent = (uint[])reagents.ItemId.Clone();
                 ReagentCount = (uint[])reagents.Count.Clone();
             }
-            else
+            else*/
             {
                 Reagent = new uint[8];
                 ReagentCount = new uint[8];

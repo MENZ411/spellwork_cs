@@ -7,9 +7,11 @@
         public uint ZoneId;
         public uint ExploreFlag;
         public uint Flags;
+        public uint UnkMop1; // Mop
         public uint SoundPreferences;
         public uint SoundPreferencesUnderwater;
         public uint SoundAmbience;
+        public string UnkNameMop2; // Name without whitespaces - MoP
         public uint ZoneMusic;
         public uint ZoneIntroMusicTable;
         public int Level;
@@ -28,5 +30,7 @@
         public uint UnkCataclysm3;
         public uint UnkCataclysm4;
         public uint UnkCataclysm5;
+        public uint UnkMop3; // MoP
+        public uint UnkMop4; // MoP
     }
 }
