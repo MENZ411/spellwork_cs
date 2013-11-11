@@ -26,9 +26,8 @@ namespace SpellWork.DBC.Structures
         public uint RadiusIndex;
         public uint RadiusMaxIndex;
         public float RealPointsPerLevel;
-        [StoragePresence(StoragePresenceOption.Include, ArraySize = 3)]
+        [StoragePresence(StoragePresenceOption.Include, ArraySize = 4)]
         public uint[] SpellClassMask;
-        public uint UnkMopFlags2; // Mop
         public uint TriggerSpell;
         public uint UnkMop3; // Mop
         public uint ImplicitTargetA;
