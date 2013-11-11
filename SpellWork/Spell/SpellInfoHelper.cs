@@ -340,7 +340,7 @@ namespace SpellWork.Spell
                 ManaPerSecond = power.ManaPerSecond;
                 ManaCostPercentage = (uint)power.ManaCostPercentage;
                 PowerDisplayId = power.PowerDisplayId;
-                PowerType = power.PowerDisplayId;
+                PowerType = power.PowerType;
             }
 
             // SpellClassOptions.dbc
