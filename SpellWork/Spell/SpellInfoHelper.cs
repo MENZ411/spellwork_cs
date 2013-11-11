@@ -330,7 +330,7 @@ namespace SpellWork.Spell
                 BaseLevel = levels.BaseLevel;
                 SpellLevel = levels.SpellLevel;
             }
-            /*
+
             // SpellPower.dbc
             var power = dbcData.Power;
             if (power != null)
@@ -338,16 +338,17 @@ namespace SpellWork.Spell
                 ManaCost = power.ManaCost;
                 ManaCostPerlevel = power.ManaCostPerlevel;
                 ManaPerSecond = power.ManaPerSecond;
-                ManaCostPercentage = power.ManaCostPercentage;
+                ManaCostPercentage = (uint)power.ManaCostPercentage;
                 PowerDisplayId = power.PowerDisplayId;
+                PowerType = power.PowerDisplayId;
             }
-            */
+
             // SpellClassOptions.dbc
             var classOptions = dbcData.ClassOptions;
             if (classOptions != null)
             {
                 ModalNextSpell = classOptions.ModalNextSpell;
-                _Description = String.IsNullOrEmpty(Description) ? classOptions.Description : _Description;
+                //_Description = String.IsNullOrEmpty(Description) ? classOptions.Description : _Description;
                 SpellFamilyName = classOptions.SpellFamilyName;
                 SpellFamilyFlags = (uint[])classOptions.SpellFamilyFlags.Clone();
             }

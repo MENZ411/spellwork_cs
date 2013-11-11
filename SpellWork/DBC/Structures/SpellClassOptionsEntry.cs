@@ -8,7 +8,7 @@ namespace SpellWork.DBC.Structures
         public uint ModalNextSpell;
         [StoragePresence(StoragePresenceOption.Include, ArraySize = 3)]
         public uint[] SpellFamilyFlags;
+        public uint Unk;
         public uint SpellFamilyName;
-        public string Description;
     }
 }
