@@ -8,6 +8,7 @@ namespace SpellWork.DBC.Structures
     {
         public uint Id;
         public uint SpellId;
+        public uint UnkMop; // Mop
         public uint Attributes;
         public uint AttributesEx;
         public uint AttributesEx2;

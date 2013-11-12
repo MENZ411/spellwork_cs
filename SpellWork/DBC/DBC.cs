@@ -17,7 +17,7 @@ namespace SpellWork.DBC
 
         public const int MaxDbcLocale                 = 16;
         public const int MaxReagentCount              = 9;
-        public const int MaxEffectIndex               = 21; // Spells can have 21 effects in Pandaria
+        public const int MaxEffectIndex               = 32; // Spells can have 32 effects in Pandaria
         public const int SpellEntryForDetectLocale    = 1;
 
         public static DBCStorage<AreaGroupEntry> AreaGroup = new DBCStorage<AreaGroupEntry>();
@@ -44,8 +44,6 @@ namespace SpellWork.DBC
         public static DBCStorage<SpellEquippedItemsEntry> SpellEquippedItems = new DBCStorage<SpellEquippedItemsEntry>();
         public static DBCStorage<SpellInterruptsEntry> SpellInterrupts = new DBCStorage<SpellInterruptsEntry>();
         public static DBCStorage<SpellLevelsEntry> SpellLevels = new DBCStorage<SpellLevelsEntry>();
-        public static DBCStorage<SpellMissileEntry> SpellMissile = new DBCStorage<SpellMissileEntry>();
-        public static DBCStorage<SpellMissileMotionEntry> SpellMissileMotion = new DBCStorage<SpellMissileMotionEntry>();
         public static DBCStorage<SpellPowerEntry> SpellPower = new DBCStorage<SpellPowerEntry>();
         public static DBCStorage<SpellRadiusEntry> SpellRadius = new DBCStorage<SpellRadiusEntry>();
         public static DBCStorage<SpellRangeEntry> SpellRange = new DBCStorage<SpellRangeEntry>();
@@ -60,6 +58,8 @@ namespace SpellWork.DBC
         [DataStoreFileName("Item-sparse")]
         public static DB2Storage<ItemSparseEntry> ItemSparse = new DB2Storage<ItemSparseEntry>();
         public static DB2Storage<SpellReagentsEntry> SpellReagents = new DB2Storage<SpellReagentsEntry>();
+        public static DB2Storage<SpellMissileEntry> SpellMissile = new DB2Storage<SpellMissileEntry>();
+        public static DB2Storage<SpellMissileMotionEntry> SpellMissileMotion = new DB2Storage<SpellMissileMotionEntry>();
         //public static DB2Storage<SpellVisualEntry> SpellVisual = new DB2Storage<SpellVisualEntry>(); -- needs proper structure 
 
         public static Dictionary<uint, SpellInfoHelper> SpellInfoStore = new Dictionary<uint, SpellInfoHelper>();

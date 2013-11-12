@@ -80,11 +80,7 @@ namespace SpellWork.DBC.Structures
 
         public SpellPowerEntry Power
         {
-            get
-            {
-                var query = from powerEntry in DBC.SpellPower.Values where powerEntry.SpellId == Id select powerEntry;
-                return query.ToList().Count != 0 ? query.ToList()[0] : null;
-            }
+            get { return SpellPowerId != 0 && DBC.SpellPower.ContainsKey(SpellPowerId) ? DBC.SpellPower[SpellPowerId] : null; }
         }
 
         /*

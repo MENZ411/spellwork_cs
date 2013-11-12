@@ -9,5 +9,7 @@
         public uint ProcChance;
         public uint ProcCharges;
         public uint ProcFlags;
+        public uint UnkMop1; // Mop
+        public uint UnkMop2; // Mop
     }
 }
