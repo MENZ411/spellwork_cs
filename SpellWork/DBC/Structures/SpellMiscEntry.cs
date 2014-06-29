@@ -22,6 +22,7 @@ namespace SpellWork.DBC.Structures
         public uint AttributesEx10;
         public uint AttributesEx11;
         public uint AttributesEx12;
+        public uint AttributesEx13;
         public uint CastingTimeIndex;
         public uint DurationIndex;
         public uint RangeIndex;

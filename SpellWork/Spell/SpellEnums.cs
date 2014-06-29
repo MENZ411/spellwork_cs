@@ -25,7 +25,17 @@ namespace SpellWork.Spell
         // unused               = 14,
         SPELLFAMILY_DEATHKNIGHT = 15,
         // unused               = 16,
-        SPELLFAMILY_PET         = 17
+        SPELLFAMILY_PET         = 17,
+        SPELLFAMILY_UNK50       = 50,
+        SPELLFAMILY_UNK52       = 52,
+        SPELLFAMILY_MONK        = 53,
+        SPELLFAMILY_UNK54       = 54,
+        SPELLFAMILY_UNK55       = 55,
+        SPELLFAMILY_UNK57       = 57,
+        SPELLFAMILY_UNK66       = 66,
+        SPELLFAMILY_UNK71       = 71,
+        SPELLFAMILY_UNK78       = 78,
+        SPELLFAMILY_UNK91       = 91
     };
 
     /// <summary>
@@ -247,7 +257,33 @@ namespace SpellWork.Spell
         SPELL_EFFECT_180                              = 180, // Unused (4.3.4)
         SPELL_EFFECT_181                              = 181, // Unused (4.3.4)
         SPELL_EFFECT_182                              = 182,
-        TOTAL_SPELL_EFFECTS                           = 183
+        SPELL_EFFECT_183                              = 183,
+        SPELL_EFFECT_REPUTATION_REWARD                = 184,
+        SPELL_EFFECT_185                              = 185,
+        SPELL_EFFECT_186                              = 186,
+        SPELL_EFFECT_RANDOM_DIGSITE                   = 187,
+        SPELL_EFFECT_STAMPEDE                         = 188,
+        SPELL_EFFECT_LOOT_BONUS                       = 189,
+        SPELL_EFFECT_190                              = 190,
+        SPELL_EFFECT_TELEPORT_TO_DIGSITE              = 191,
+        SPELL_EFFECT_UNCAGE_PET                       = 192,
+        SPELL_EFFECT_193                              = 193,
+        SPELL_EFFECT_194                              = 194,
+        SPELL_EFFECT_195                              = 195,
+        SPELL_EFFECT_196                              = 196,
+        SPELL_EFFECT_197                              = 197,
+        SPELL_EFFECT_198                              = 198,
+        SPELL_EFFECT_199                              = 199,
+        SPELL_EFFECT_HEAL_BATTLEPET_PCT               = 200,
+        SPELL_EFFECT_BATTLE_PET                       = 201,
+        SPELL_EFFECT_202                              = 202,
+        SPELL_EFFECT_203                              = 203,
+        SPELL_EFFECT_204                              = 204,
+        SPELL_EFFECT_205                              = 205,
+        SPELL_EFFECT_206                              = 206,
+        SPELL_EFFECT_207                              = 207,
+        SPELL_EFFECT_208                              = 208,
+        TOTAL_SPELL_EFFECTS                           = 209
     };
 
     /// <summary>
@@ -626,7 +662,74 @@ namespace SpellWork.Spell
         SPELL_AURA_368                                      = 368, // Not used in 4.3.4
         SPELL_AURA_ENABLE_POWER_BAR_TIMER                   = 369,
         SPELL_AURA_SET_FAIR_FAR_CLIP                        = 370, // Overrides client's View Distance setting to max("Fair", current_setting)
-        TOTAL_AURAS                                         = 371
+        SPELL_AURA_371                                      = 371,
+        SPELL_AURA_372                                      = 372,
+        SPELL_AURA_INCREASE_MIN_SWIM_SPEED                  = 373,
+        SPELL_AURA_MOD_FALL_DAMAGE                          = 374,
+        SPELL_AURA_375                                      = 375,
+        SPELL_AURA_MOD_CURRENCY_GAIN_FROM_CREATURE          = 376,
+        SPELL_AURA_377                                      = 377,
+        SPELL_AURA_378                                      = 378,
+        SPELL_AURA_MOD_MANA_REGEN_PERCENT                   = 379,
+        SPELL_AURA_380                                      = 380,
+        SPELL_AURA_MOD_PET_HEALTH_FROM_OWNER_PCT            = 381,
+        SPELL_AURA_MODE_PET_HEALTH_PCT                      = 382,
+        SPELL_AURA_383                                      = 383,
+        SPELL_AURA_384                                      = 384,
+        SPELL_AURA_STRIKE_SELF                              = 385,
+        SPELL_AURA_MOD_REST_GAINED                          = 386,
+        SPELL_AURA_MOD_REFORGE_AND_TRANSMOGRIFY_COST        = 387,
+        SPELL_AURA_MOD_FLY_PATH_SPEED                       = 388,
+        SPELL_AURA_MOD_CAST_TIME_WHILE_MOVING               = 389,
+        SPELL_AURA_390                                      = 390,
+        SPELL_AURA_391                                      = 391,
+        SPELL_AURA_392                                      = 392,
+        SPELL_AURA_MOD_PARRY_PERCENT_2                      = 393,
+        SPELL_AURA_LOOT_BONUS                               = 394,
+        SPELL_AURA_395                                      = 395,
+        SPELL_AURA_396                                      = 396,
+        SPELL_AURA_397                                      = 397,
+        SPELL_AURA_398                                      = 398,
+        SPELL_AURA_399                                      = 399,
+        SPELL_AURA_SKILL_2                                  = 400,
+        SPELL_AURA_401                                      = 401,
+        SPELL_AURA_402                                      = 402,
+        SPELL_AURA_MOD_SPELL_VISUAL                         = 403,
+        SPELL_AURA_OVERRIDE_AP_BY_SPELL_POWER_PCT           = 404,
+        SPELL_AURA_INCREASE_HASTE_FROM_ITEMS_BY_PCT         = 405,
+        SPELL_AURA_406                                      = 406,
+        SPELL_AURA_MOD_FEAR_2                               = 407,
+        SPELL_AURA_PROC_SPELL_CHARGE                        = 408,
+        SPELL_AURA_MOD_FALL_SPEED                           = 409,
+        SPELL_AURA_410                                      = 410,
+        SPELL_AURA_MOD_CHARGES                              = 411,
+        SPELL_AURA_HASTE_AFFECTS_MANA_REGEN                 = 412,
+        SPELL_AURA_413                                      = 413,
+        SPELL_AURA_414                                      = 414,
+        SPELL_AURA_415                                      = 415,
+        SPELL_AURA_416                                      = 416,
+        SPELL_AURA_417                                      = 417,
+        SPELL_AURA_418                                      = 418,
+        SPELL_AURA_419                                      = 419,
+        SPELL_AURA_420                                      = 420,
+        SPELL_AURA_421                                      = 421,
+        SPELL_AURA_422                                      = 422,
+        SPELL_AURA_423                                      = 423,
+        SPELL_AURA_424                                      = 424,
+        SPELL_AURA_425                                      = 425,
+        SPELL_AURA_426                                      = 426,
+        SPELL_AURA_427                                      = 427,
+        SPELL_AURA_428                                      = 428,
+        SPELL_AURA_429                                      = 429,
+        SPELL_AURA_430                                      = 430,
+        SPELL_AURA_431                                      = 431,
+        SPELL_AURA_432                                      = 432,
+        SPELL_AURA_433                                      = 433,
+        SPELL_AURA_434                                      = 434,
+        SPELL_AURA_435                                      = 435,
+        SPELL_AURA_436                                      = 436,
+        SPELL_AURA_437                                      = 437,
+        TOTAL_AURAS                                         = 438
     }
 
     /// <summary>
@@ -762,6 +865,22 @@ namespace SpellWork.Spell
         TARGET_UNK_125                          = 125,
         TARGET_UNK_126                          = 126,
         TARGET_UNK_127                          = 127,
+        TARGET_UNK_128                          = 128,
+        TARGET_UNK_129                          = 129,
+        TARGET_UNK_130                          = 130,
+        TARGET_UNK_131                          = 131,
+        TARGET_UNK_132                          = 132,
+        TARGET_UNK_133                          = 133,
+        TARGET_UNK_134                          = 134,
+        TARGET_UNK_135                          = 135,
+        TARGET_UNK_136                          = 136,
+        TARGET_UNK_137                          = 137,
+        TARGET_UNK_138                          = 138,
+        TARGET_UNK_139                          = 139,
+        TARGET_UNK_140                          = 140,
+        TARGET_UNK_141                          = 141,
+        TARGET_UNK_142                          = 142,
+        TARGET_UNK_143                          = 143,
         TOTAL_SPELL_TARGETS,
     };
 
@@ -903,7 +1022,8 @@ namespace SpellWork.Spell
         MECHANIC_DISCOVERY          = 28,
         MECHANIC_IMMUNE_SHIELD      = 29,  // Divine (Blessing) Shield/Protection and Ice Block
         MECHANIC_SAPPED             = 30,
-        MECHANIC_ENRAGED            = 31
+        MECHANIC_ENRAGED            = 31,
+        MECHANIC_WOUNDED            = 32
     };
 
     public enum SpellMissInfo
@@ -945,7 +1065,9 @@ namespace SpellWork.Spell
     {
         SPELL_PREVENTION_TYPE_NONE    = 0,
         SPELL_PREVENTION_TYPE_SILENCE = 1,
-        SPELL_PREVENTION_TYPE_PACIFY  = 2
+        SPELL_PREVENTION_TYPE_PACIFY  = 2,
+        SPELL_PREVENTION_TYPE_UNK1    = 3,
+        SPELL_PREVENTION_TYPE_UNK2    = 4
     };
 
     [Flags]
@@ -1035,7 +1157,13 @@ namespace SpellWork.Spell
         SPELLMOD_VALUE_MULTIPLIER       = 27,
         SPELLMOD_RESIST_DISPEL_CHANCE   = 28,
         SPELLMOD_CRIT_DAMAGE_BONUS_2    = 29, //one not used spell
-        SPELLMOD_SPELL_COST_REFUND_ON_FAIL = 30
+        SPELLMOD_SPELL_COST_REFUND_ON_FAIL = 30,
+        SPELLMOD_CHARGES_COUNT          = 31,
+        SPELLMOD_EFFECT4                = 32,
+        SPELLMOD_EFFECT5                = 33,
+        SPELLMOD_UNK34                  = 34,
+        SPELLMOD_UNK35                  = 35,
+        SPELLMOD_JUMP_DISTANCE          = 36
     };
 
     [Flags]
@@ -1078,6 +1206,12 @@ namespace SpellWork.Spell
         POWER_ECLIPSE         = 8,
         POWER_HOLY_POWER      = 9,
         POWER_ALTERNATE_POWER = 10,           // Used in some quests
+        POWER_DARK_FORCE      = 11,
+        POWER_CHI             = 12,
+        POWER_SHADOW_ORBS     = 13,
+        POWER_BURNING_EMBERS  = 14,
+        POWER_DEMONIC_FURY    = 15,
+        POWER_UNKNOWN         = 16,
         POWER_HEALTH          = 0xFFFFFFFE,    // (-2 as signed value)
     };
 
@@ -1242,7 +1376,9 @@ namespace SpellWork.Spell
         NOT_SPECIFIED   = 1 << 9,
         TOTEM           = 1 << 10,
         NON_COMBAT_PET  = 1 << 11,
-        GAS_CLOUD       = 1 << 12
+        GAS_CLOUD       = 1 << 12,
+        WILD_PET        = 1 << 13,
+        ABBERATION      = 1 << 14
     };
 
     [Flags]
@@ -1742,6 +1878,43 @@ namespace SpellWork.Spell
     };
 
     [Flags]
+    public enum SpellAtributeEx13 : uint
+    {
+        SPELL_ATTR13_UNK0 = 0x00000001, //  0
+        SPELL_ATTR13_UNK1 = 0x00000002, //  1
+        SPELL_ATTR13_UNK2 = 0x00000004, //  2
+        SPELL_ATTR13_UNK3 = 0x00000008, //  3
+        SPELL_ATTR13_UNK4 = 0x00000010, //  4
+        SPELL_ATTR13_UNK5 = 0x00000020, //  5
+        SPELL_ATTR13_UNK6 = 0x00000040, //  6
+        SPELL_ATTR13_UNK7 = 0x00000080, //  7
+        SPELL_ATTR13_UNK8 = 0x00000100, //  8
+        SPELL_ATTR13_UNK9 = 0x00000200, //  9
+        SPELL_ATTR13_UNK10 = 0x00000400, // 10
+        SPELL_ATTR13_UNK11 = 0x00000800, // 11
+        SPELL_ATTR13_UNK12 = 0x00001000, // 12
+        SPELL_ATTR13_UNK13 = 0x00002000, // 13
+        SPELL_ATTR13_UNK14 = 0x00004000, // 14
+        SPELL_ATTR13_UNK15 = 0x00008000, // 15
+        SPELL_ATTR13_UNK16 = 0x00010000, // 16
+        SPELL_ATTR13_UNK17 = 0x00020000, // 17
+        SPELL_ATTR13_UNK18 = 0x00040000, // 18
+        SPELL_ATTR13_UNK19 = 0x00080000, // 19
+        SPELL_ATTR13_UNK20 = 0x00100000, // 20
+        SPELL_ATTR13_UNK21 = 0x00200000, // 21
+        SPELL_ATTR13_UNK22 = 0x00400000, // 22
+        SPELL_ATTR13_UNK23 = 0x00800000, // 23
+        SPELL_ATTR13_UNK24 = 0x01000000, // 24
+        SPELL_ATTR13_UNK25 = 0x02000000, // 25
+        SPELL_ATTR13_UNK26 = 0x04000000, // 26
+        SPELL_ATTR13_UNK27 = 0x08000000, // 27
+        SPELL_ATTR13_UNK28 = 0x10000000, // 28
+        SPELL_ATTR13_UNK29 = 0x20000000, // 29
+        SPELL_ATTR13_UNK30 = 0x40000000, // 30
+        SPELL_ATTR13_UNK31 = 0x80000000  // 31
+    };
+
+    [Flags]
     public enum CombatRating
     {
         CR_WEAPON_SKILL             =      0x00,
@@ -1770,6 +1943,7 @@ namespace SpellWork.Spell
         CR_EXPERTISE                = 1 << 0x16,
         CR_ARMOR_PENETRATION        = 1 << 0x17,
         CR_MASTERY                  = 1 << 0x18,
+        CR_PVP_POWER                = 1 << 0x19,
     };
 
     public enum UnitMods

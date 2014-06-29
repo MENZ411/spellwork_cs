@@ -25,6 +25,7 @@ namespace SpellWork.Spell
         public uint AttributesEx10;
         public uint AttributesEx11;
         public uint AttributesEx12;
+        public uint AttributesEx13;
         public ulong Stances;                                     // 12-13    m_shapeshiftMask
         public ulong StancesNot;                                  // 14-15    m_shapeshiftExclude
         public uint Targets;                                      // 16       m_targets
@@ -224,6 +225,7 @@ namespace SpellWork.Spell
                 AttributesEx10 = misc.AttributesEx10;
                 AttributesEx11 = misc.AttributesEx11;
                 AttributesEx12 = misc.AttributesEx12;
+                AttributesEx13 = misc.AttributesEx13;
                 CastingTimeIndex = misc.CastingTimeIndex;
                 DurationIndex = misc.DurationIndex;
                 //PowerType = misc.PowerType;
